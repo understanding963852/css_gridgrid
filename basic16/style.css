@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{border: 2px solid #000;
+background-color: green;
+padding: 10px;
+}
+
+.item{border: 2px solid #000;
+    background-color: yellow;
+    padding: 10px;
+    }
+
+/* align-self 
+개별 아이템 세로 정렬
+ 
+*/
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+   
+}
+.item:nth-child(2){
+ align-self: center;
+}

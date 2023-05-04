@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{border: 2px solid #000;
+background-color: green;
+padding: 10px;
+}
+
+.item{border: 2px solid #000;
+    background-color: yellow;
+    padding: 10px;
+    }
+
+/* place-items - (align-items) + (justify-items) */
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    height: 120vh;
+
+    place-items: center start;
+    /* place-items: align-items justify-items; */
+}
+.item{}
