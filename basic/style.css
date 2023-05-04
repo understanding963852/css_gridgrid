@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/* 
+grid는 flex보다 나중에 나왔음
+flex는 한방향 배치 구현
+grid는 두방향 배치 구현
+두개를 다 안다면 알맞는곳에 사용할수 있음
+전체구성은 grid하고 부분구성은 flex로 하는 경우가 많음. */
+.container{border: 2px solid #000;
+background-color: green;
+padding: 10px;
+}
+
+.item{border: 2px solid #000;
+    background-color: yellow;
+    padding: 10px;
+    }

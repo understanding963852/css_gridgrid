@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{border: 2px solid #000;
+background-color: green;
+padding: 10px;
+}
+
+.item{border: 2px solid #000;
+    background-color: yellow;
+    padding: 10px;
+    }
+
+    /* grid-auto-columns, grid-auto-rows */
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        /* grid-template-rows: repeat(3,minmax(200px, auto)); */
+        grid-auto-rows:minmax(200px,auto);
+    }
